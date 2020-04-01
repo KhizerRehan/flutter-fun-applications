@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapplications/src/default_app/default_app.dart';
+import 'package:flutterapplications/src/i_am_poor_app/i_am_poor_app.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(IamPoorApp());
