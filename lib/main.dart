@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapplications/src/default_app/default_app.dart';
+import 'package:flutterapplications/src/mi_card_app/mi_card_app.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MiCardApp());
