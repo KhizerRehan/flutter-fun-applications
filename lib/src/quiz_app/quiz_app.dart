@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:flutterapplications/src/quiz_app/quiz_brain.dart';
 
 class QuizApp extends StatefulWidget {
@@ -27,6 +28,17 @@ class _QuizAppState extends State<QuizApp> {
           );
         }
         quizBrain.nextQuestion();
+      });
+    } else {
+      setState(() {
+        Alert(
+          context: context,
+          title: 'Finished!',
+          desc: 'You\'ve reached the end of the quiz.',
+        ).show();
+
+        quizBrain.resetQuestionCounter(); // reset questions counter.
+        this.scoreKeeper = []; // empty icons list.
       });
     }
   }
